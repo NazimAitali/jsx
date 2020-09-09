@@ -10,7 +10,7 @@ function App() {
       <div className="content">  
         <h1 className="title red">CheckPoint JSX</h1>        
         <p><img src={imgsrc} alt="first"/></p>       
-        <p><img src="/img.png" alt="second"/></p>  
+        <p><img src={process.env.PUBLIC_URL + '/img.png'} alt="second"/></p>  
       </div>        
       <video className="video" controls>  
         <source src={video} type="video/mp4"/> 
